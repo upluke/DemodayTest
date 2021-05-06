@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js">
+
+	</script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Copse&family=Didact+Gothic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    
+
+            <!-- Add icon library -->
+
+
+      <!-- <div class="search-box">
+        <button class="btn"><i class="fa fa-home"></i></button>
+        <input type="text" class="search-input" placeholder="Search..">
+        <button class="search-button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div> -->
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Carbon Count</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Carbon Levels</a>
+              <a class="nav-link" href="#">US 2021 Generation</a>
+              <a class="nav-link" href="#">US 2021 Renewables Consumption</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+
+	  <h1 id="page-title" style="text-align:center">Carbon Dioxide In The Atmosphere</h1>
+    </br>
+    </br>
+    </br>
+	  <h2 class="top-space" >What is Carbon Dioxide</h2>
+	  <p id="carbon">Carbon dioxide is a gas molecule. It is used by plants to create oxygen, which is then used by us to respire.
+		Similar to water vapor and methane, it is also a green house gas meaning that it traps heat from the sun which is helpful
+		when it comes to keeping the earth warm.</p>
+
+	  <h2>Causes of Carbon Emission</h2>
+	  <p>The major causes of carbon dioxide emissions are anthropogenic activities such as deforestation and the burning of fossil
+		fuels. Fossil fuels (which include oil, coal, and natural gas) are forms of stored solar energy, and burning them releases
+		much of the carbon stored into the atmosphere. Trees use carbon dioxide for photosynthesis, and are also large carbon sinks.
+		Like with fossil fuels, cutting down forests releases the carbon stored in the organism.</p>
+
+	  <h2>Carbon Levels</h2>
+	  <h5>Carbon PPM</h5>
+	  <canvas class="graph1" id="co2-levels"></canvas>
+	  <h5 class="carbonlvl-source" id="carbonlvl-source" >Sources:<a href="https://www.sealevel.info/co2.html" target="_blank">https://www.sealevel.info/co2.html</a></h5>
+
+
+
+	  <p>Carbon levels have been increasing by ~2.5 ± 0.1 ppm yearly. The annual increase in atmospheric carbon dioxide over the
+		past 60 years is aproximatly 100 times faster than the earlier rate. The atmospheric concentration of Co2 have risen by
+		48% above pre-industrial levels in 1850 over the past 171 years because of human activity. It is predicted that the carbon
+		levels will continue to increase we don't turn to sustainable and clean energy.</p>
+
+	  <h2>US Electricity Summary</h2>
+
+	  <h3>2021 Generation by Billion kWh</h3>
+	  <canvas id="generation"></canvas>
+	  <h5 class="kWh-sources" id="kWh-sources" >Sources: <a href="https://www.eia.gov/outlooks/steo/report/electricity.php" target="_blank">https://www.eia.gov/outlooks/steo/report/electricity.php</a></h5>
+
+	  <!-- explain this chart -->
+
+	  <h3>2021 Renewables Consumption by quadrillion Btu</h3>
+	  <canvas id="usRenewablesConsumption"></canvas>
+	  <h5 class="consumption-sources">Sources: <a href="https://www.eia.gov/outlooks/steo/report/electricity.php" target="_blank">https://www.eia.gov/outlooks/steo/report/electricity.php</a></h5>
+
+	  <!-- explain this chart -->
+
+	  <h2>Impacts of Carbon Emissions</h2>
+	  <p>The still rising carbon levels have caused an increase in the earth’s global temperature. The earth’s temperature has
+		been rising by 0.32 °F every 10 years since 1981 which is more than 2 times the rate in 1880 (0.13 °F). The rising temperature
+		is causing the ice caps to melt, increasing the ocean's elevation. It is also affecting the ocean’s pH levels and causing
+		it to become more acidic. This is harmful to the marine life as well. Plants and animals as well as ourselves are also
+		being negatively impacted by all of these.
+	  </p>
+
+	  <h2>Current Things Being Done To Reduce Carbon Levels</h2>
+	  <p class= "margin">Many countries are already shifting towards cleaner energy sources (solar, wind, hydro, etc.) and implementing stricter
+		regulations on fossil fuel use. There has been increased encouragement of green buildings and sustainable construction
+		methods, and also more awareness around protecting marshes and other carbon sinks. </p>
+
+	  <h2>What We Can Do</h2>
+	  <p>Although the rising carbon level poses a big issue, we as individuals can make choices in our everyday lives to reduce
+		our carbon footprints. We can choose to bike or take public transportation instead of driving. We can purchase products
+		made from recycled or renewable materials. We can lower our meat and dairy intake, and eat lower on the food chain. Furthermore,
+		we can retrofit our homes to lower building related energy use. </p>
+
+	  <script src="script.js"></script>
+  </body>
+
+</html>
